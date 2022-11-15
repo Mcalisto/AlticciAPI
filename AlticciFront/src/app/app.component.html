@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+    <h1>Alticci</h1>
+    <form [formGroup]="form">
+        <label for="number">Number:</label><br>
+        <input type="text" id="number" name="number" value="" formControlName="number">
+        <br>
+        <br>
+        <button (click)="alticciResult()" class='btn btn-info' data-toggle="modal">Send</button>
+        <br>
+        <br>
+        <label for="result">Result:</label><br>
+        <input type="text" id="result" name="result" value="" formControlName="result">
+      </form> 
+</div>
+
+</body>
+</html>
+
+
